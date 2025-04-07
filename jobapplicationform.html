@@ -20,14 +20,15 @@
         <option value="123">123</option>
         <option value="124">124</option>
     </select>
-    <p><label for="name">First name</label>
+    <fieldset><p><label for="name">First name</label>
         <input type="text" name="name" id="name" min="13" max="20" required></p>
         <p><label for="name">Last name</label>
             <input type="text" name="name" id="name" min="13" max="20" required></p>
-            <p>
+            <p></fieldset>
+    
                 <label for="date">Date of birth</label>
                 <input type="date" name="date" id="date"></p>
-                <p><label for="name">Street Address</label>
+                <p><label for="name">Street Address</label><br>
                     <input type="text" name="name" id="name" max="40"></p>
                     <p><label for="name">Suburb/town</label>
                         <input type="text" name="name" id="name" max="40"></p>
@@ -42,13 +43,14 @@
                                 <option value="TAS">TAS</option>
                                 <option value="ACT">ACT</option>
                             </select>
-                        </p>
+                        </p><br>
+                        
                         <p> <label for="number">Postcode</label>
                             <input type="number" name="number" id="number" 0000-9999 required></p>
                             <p><label for="email">Email Address</label>
                                 <input type="email" name="email" id="email" required /></p>
                                 <p> <label for="number"> Phone number</label>
-                                    <input type="number" name="number" id="number" pattern="[0-9]{10} required></p>
+                                    <input type="number" name="number" id="number" pattern="[0-9]{10}" required></p><br>
 
                                     <h2>Required skills</h2>
                                     <p><label for="text" required>Networking Protocols</label>
@@ -62,9 +64,10 @@
                                                 <p><label for="text">Cloud Networking</label>
                                                     <input type="checkbox" name="text" id="text"></p>
                                                     <p><label for="text">Security Fundamentals</label>
-                                                    <input type="text" name="text" id="text"></p>
+                                                    <input type="checkbox" name="text" id="text"></p>
                                                     <p><label for="text">Description</label>
-                                                        <input type="textarea" name="text" id="text" rows="4" cols="50"></p>
+                                                        <textarea name="description" id="description" rows="4" cols="40" placeholder="description"></textarea>
+                <br></p>
 
              <input type= "submit" value="APPLY">
             <input type= "reset" value="RESET">
