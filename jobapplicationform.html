@@ -9,7 +9,8 @@
     <title> JOB APPLICATION</title>
 </head>
 <body>
-    <h1>Fill the required fields for job application</h1>
+    <h1>JOB APPLICATION</h1>
+    <h2>Fill the required fields for job application</h2>
 <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
 
     <label for="number">JOB REFERENCE</label>
@@ -44,10 +45,11 @@
                         </p>
                         <p> <label for="number">Postcode</label>
                             <input type="number" name="number" id="number" 0000-9999 required></p>
-                            <p><label for="text">Email Address</label>
-                                <input type="text" name="text" id="text" required></p>
+                            <p><label for="email">Email Address</label>
+                                <input type="email" name="email" id="email" required /></p>
                                 <p> <label for="number"> Phone number</label>
-                                    <input type="number" name="number" id="number" required> </p>
+                                    <input type="number" name="number" id="number" pattern="[0-9]{10} required></p>
+
                                     <h2>Required skills</h2>
                                     <p><label for="text" required>Networking Protocols</label>
                                     <input type="checkbox" name="text" id="text" checked="checked"></p>
@@ -57,12 +59,12 @@
                                             <input type="checkbox" name="text" id="text"></p>
                                             <p><label for="text">Network Configuration & Troubleshooting</label>
                                                 <input type="checkbox" name="text" id="text"></p>
-                                                <p><label for="text">Cloud Networkin</label>
+                                                <p><label for="text">Cloud Networking</label>
                                                     <input type="checkbox" name="text" id="text"></p>
                                                     <p><label for="text">Security Fundamentals</label>
                                                     <input type="text" name="text" id="text"></p>
                                                     <p><label for="text">Description</label>
-                                                        <input type="textarea" name="text" id="text"></p>
+                                                        <input type="textarea" name="text" id="text" rows="4" cols="50"></p>
 
              <input type= "submit" value="APPLY">
             <input type= "reset" value="RESET">
