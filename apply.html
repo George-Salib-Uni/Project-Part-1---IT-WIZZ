@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="job application">
+    <meta name="keywords" content="HTML, Doctype, Head, Body, Meta, Paragraph, Headings, Strong, Emphasis">
+    <meta name="author" content="job application">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title> JOB APPLICATION</title>
+</head>
+<body>
+    <h1>JOB APPLICATION</h1>
+    <h2>FILL THE REQUIRED FIELDS FOR JOB APPLICATION</h2>
+<form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+
+    <label for="number">JOB REFERENCE</label>
+    <select name="number" id="number" required>
+        <option value="001">001</option>
+        <option value="002">002</option>
+        <option value="003">003</option>
+        <option value="004">004</option>
+    </select>
+    <fieldset><p><label for="name">First name</label>
+        <input type="text" name="name" id="name" min="13" max="20" required></p>
+        <p><label for="name">Last name</label>
+            <input type="text" name="name" id="name" min="13" max="20" required></p>
+            <p></fieldset>
+    
+                <label for="date">Date of birth</label>
+                <input type="date" name="date" id="date"></p>
+                <p><label for="name">Street Address</label><br>
+                    <input type="text" name="name" id="name" max="40"></p>
+                    <p><label for="name">Suburb/town</label>
+                        <input type="text" name="name" id="name" max="40"></p>
+                        <p> <label for="name"> State</label>
+                            <select name="name" id="name" vic-checked="checked">
+                                <option value="VIC">VIC</option>
+                                <option value="NSW">NSW</option>
+                                <option value="QLD">QLD</option>
+                                <option value="NT">NT</option>
+                                <option value="WA">WA</option>
+                                <option value="SA">SA</option>
+                                <option value="TAS">TAS</option>
+                                <option value="ACT">ACT</option>
+                            </select>
+                        </p><br>
+                        
+                        <p> <label for="number">Postcode</label>
+                            <input type="number" name="number" id="number" 0000-9999 required></p>
+                            <p><label for="email">Email Address</label>
+                                <input type="email" name="email" id="email" required /></p>
+                                <p> <label for="number"> Phone number</label>
+                                    <input type="number" name="number" id="number" pattern="[0-9]{10}" required></p><br>
+
+                                    <h2>REQUIRED SKILLS</h2>
+                                    <p><label for="text" required>Networking Protocols</label>
+                                    <input type="checkbox" name="text" id="text" checked="checked"></p>
+                                    <p><label for="text">Hardware Knowledge</label>
+                                        <input type="checkbox" name="text" id="text"></p>
+                                        <p><label for="text">Operating Systems</label>
+                                            <input type="checkbox" name="text" id="text"></p>
+                                            <p><label for="text">Network Configuration & Troubleshooting</label>
+                                                <input type="checkbox" name="text" id="text"></p>
+                                                <p><label for="text">Cloud Networking</label>
+                                                    <input type="checkbox" name="text" id="text"></p>
+                                                    <p><label for="text">Security Fundamentals</label>
+                                                    <input type="checkbox" name="text" id="text"></p>
+                                                    <p><label for="text">Other Skills</label><br>
+                                                        <textarea name="description" id="description" rows="4" cols="40" placeholder="Other Skills"></textarea>
+                <br></p>
+
+            <input id="button" type= "submit" value="APPLY">
+            <input id="button" type= "reset" value="RESET">
+    
+</form>
+
+
+    
+</body>
+
