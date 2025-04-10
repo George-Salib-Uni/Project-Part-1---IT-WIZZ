@@ -43,8 +43,6 @@ input {
     padding: 10px;
 }
 
-<<<<<<< HEAD
-=======
 #button :hover{ background-color: cadetblue;
                 color: darkgreen;
 
@@ -70,4 +68,7 @@ nav {
     padding: 1em;
     background-color: lightgray;
 }
->>>>>>> 11650d1a99360fb08f8146360821ec178c6e698d
+
+a {
+    text-decoration: none;
+}
