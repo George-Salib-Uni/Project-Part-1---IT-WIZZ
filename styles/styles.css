@@ -8,6 +8,10 @@ h2{background-color: cadetblue;
 color: white;
 }
 
+h3{background-color: rgb(63, 145, 148);
+    color: white;
+    }
+
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: white;
