@@ -35,3 +35,24 @@ body {
                 color: darkgreen;
 
 }
+
+h3 {
+    text-decoration: underline;
+
+}
+
+h5 {
+    font-family: Arial;
+}
+section{
+    border: 2px solid gray;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid gray;
+    padding: 1em;
+    background-color: lightgray;
+}
