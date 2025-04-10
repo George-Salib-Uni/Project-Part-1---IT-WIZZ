@@ -1,88 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="job application">
-    <meta name="keywords" content="HTML, Doctype, Head, Body, Meta, Paragraph, Headings, Strong, Emphasis">
-    <meta name="author" content="job application">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title> JOB APPLICATION</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="job application">
+  <meta name="keywords" content="HTML, Doctype, Head, Body, Meta, Paragraph, Headings, Strong, Emphasis">
+  <meta name="author" content="job application">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>JOB APPLICATION</title>
 </head>
 <body>
-    <h1>JOB APPLICATION</h1>
-    <h2>FILL THE REQUIRED FIELDS FOR JOB APPLICATION</h2>
-<form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+  <h1>JOB APPLICATION</h1>
+  <h2>FILL THE REQUIRED FIELDS FOR JOB APPLICATION</h2>
+
+  <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" onsubmit="return validatePostcode()">  <!--onsubmit was taken from chatgpt -->
 
     <label for="jobreference">JOB REFERENCE</label>
     <select name="number" id="jobreference">
         <option value="select">select</option>
-        <option value="101">101</option>
-        <option value="102">102</option>
-        <option value="103">103</option>
-        <option value="104">104</option>
+        <option value="Network Administrator 101">Network Administrator-101</option>
+        <option value="Cybersecurity Specialist 102">Cybersecurity Specialist-102</option>
     </select>
+
     <fieldset>
-        <legend>Personal Details</legend>
-        <p><label for="Firstname">First name</label>
-        <input type="text" name="Firstname" id="Firstname"  maxlength="20" required></p>
-        <p><label for="Lastname">Last name</label>
-           <input type="text" name="Lastname" id="Lastname"  maxlength="20" required></p>
-            <p>
-    
-                <label for="dob">Date of birth</label>
-                <input type="date" name="dob" id="dob"></p>
-                <p><label for="streetaddress">Street Address</label><br>
-                    <input type="text" name="streetaddress" id="streetaddress" maxlength="40"></p>
-                    <p><label for="suburb">Suburb/town</label>
-                        <input type="text" name="suburb" id="suburb" maxlength="40"></p>
-                        <p> <label for="state"> State</label>
-                            <select name="state" id="state">
-                                <option value="VIC" selected>VIC</option> <!-- used chatgpt for this particular-->
-                                <option value="NSW">NSW</option>
-                                <option value="QLD">QLD</option>
-                                <option value="NT">NT</option>
-                                <option value="WA">WA</option>
-                                <option value="SA">SA</option>
-                                <option value="TAS">TAS</option>
-                                <option value="ACT">ACT</option>
-                            </select>
-                        </p><br>
-                        
-                        <p> <label for="Postcode">Postcode</label>
-                            <input type="number" name="Postcode" id="Postcode"></p>
-                            <p><label for="email">Email Address</label>
-                                <input type="email" name="email" id="email" required></p>
-                                <p> <label for="phonenumber"> Phone number</label>
-                                    <input type="number" name="phonenumber" id="phonenumber" placeholder="eg-9496102189"></p><br>
-                                </fieldset>
+      <legend>Personal Details</legend>
 
-                                
-                                    <h2>REQUIRED SKILLS</h2> 
-                                    <p><label for="NetworkingProtocols">Networking Protocols</label>
-                                    <input type="checkbox" name="NetworkingProtocols" id="NetworkingProtocols" checked="checked"></p>
-                                    <p><label for="HardwareKnowledge">Hardware Knowledge</label>
-                                        <input type="checkbox" name="HardwareKnowledge" id="HardwareKnowledge"></p>
-                                        <p><label for="OperatingSystems">Operating Systems</label>
-                                            <input type="checkbox" name="OperatingSystems" id="OperatingSystems"></p>
-                                            <p><label for="NetworkConfiguration&Troubleshooting">Network Configuration & Troubleshooting</label>
-                                                <input type="checkbox" name="NetworkConfiguration&Troubleshooting" id="NetworkConfiguration&Troubleshooting"></p>
-                                                <p><label for="CloudNetworking">Cloud Networking</label>
-                                                    <input type="checkbox" name="CloudNetworking" id="CloudNetworking"></p>
-                                                    <p><label for="SecurityFundamentals">Security Fundamentals</label>
-                                                    <input type="checkbox" name="SecurityFundamentals" id="SecurityFundamentals"></p>
-                                                    <p><label for="description">Other Skills</label><br>
-                                                        <textarea name="description" id="description" rows="4" cols="40" placeholder="Other Skills"></textarea>
-                                                        <br></p>
-                                
-                                    
+      <p><label for="Firstname">First name</label>
+        <input type="text" name="Firstname" id="Firstname" maxlength="20" required></p>
 
-            <input id="sbutton" type= "submit" value="APPLY">
-            <input id="rbutton" type= "reset" value="RESET">
-    
-</form>
+      <p><label for="Lastname">Last name</label>
+        <input type="text" name="Lastname" id="Lastname" maxlength="20" required></p>
 
+      <p><label for="dob">Date of birth</label>
+        <input type="date" name="dob" id="dob"></p>
 
-    
+      <p><label for="streetaddress">Street Address</label><br>
+        <input type="text" name="streetaddress" id="streetaddress" maxlength="40"></p>
+
+      <p><label for="suburb">Suburb/town</label>
+        <input type="text" name="suburb" id="suburb" maxlength="40"></p>
+
+      <p><label for="state">Select State/Territory:</label>
+        <select name="state" id="state" required>
+          <option value="">--Select--</option>
+          <option value="ACT">ACT</option>
+          <option value="NSW">NSW</option>
+          <option value="NT">NT</option>
+          <option value="QLD">QLD</option>
+          <option value="SA">SA</option>
+          <option value="TAS">TAS</option>
+          <option value="VIC">VIC</option>
+          <option value="WA">WA</option>
+        </select>
+      </p>
+
+      <p><label for="Postcode">Postcode</label>
+        <input type="text" name="Postcode" id="Postcode" pattern="\d{4}" required>
+      </p>
+
+      <p><label for="email">Email Address</label>
+        <input type="email" name="email" id="email" required></p>
+
+      <p><label for="phonenumber">Phone number</label>
+        <input type="tel" name="phonenumber" id="phonenumber" placeholder="eg-9496102189"></p>
+    </fieldset>
+
+    <h2>REQUIRED SKILLS</h2>
+    <p><label><input type="checkbox" name="NetworkingProtocols" checked> Networking Protocols</label></p>
+    <p><label><input type="checkbox" name="HardwareKnowledge"> Hardware Knowledge</label></p>
+    <p><label><input type="checkbox" name="OperatingSystems"> Operating Systems</label></p>
+    <p><label><input type="checkbox" name="NetworkConfiguration&Troubleshooting"> Network Configuration & Troubleshooting</label></p>
+    <p><label><input type="checkbox" name="CloudNetworking"> Cloud Networking</label></p>
+    <p><label><input type="checkbox" name="SecurityFundamentals"> Security Fundamentals</label></p>
+
+    <p><label for="description">Other Skills</label><br>
+      <textarea name="description" id="description" rows="4" cols="40" placeholder="Other Skills"></textarea>
+    </p>
+
+    <p>
+      <input id="sbutton" type="submit" value="APPLY">
+      <input id="rbutton" type="reset" value="RESET">
+    </p>
+  </form>
+ <!-- used chatgpt in the script down here -->
+
+  <script>
+    const postcodeRanges = {
+      ACT: [[200, 299], [2600, 2618], [2900, 2920]],
+      NSW: [[1000, 1999], [2000, 2599], [2619, 2899], [2921, 2999]],
+      NT: [[800, 899], [900, 999]],
+      QLD: [[4000, 4999], [9000, 9999]],
+      SA: [[5000, 5799], [5800, 5999]],
+      TAS: [[7000, 7799], [7800, 7999]],
+      VIC: [[3000, 3999], [8000, 8999]],
+      WA: [[6000, 6797], [6800, 6999]]
+    };
+
+    function validatePostcode() {
+      const state = document.getElementById("state").value;
+      const postcode = parseInt(document.getElementById("Postcode").value);
+
+      if (isNaN(postcode) || postcode < 0 || postcode > 9999) {
+        alert("Please enter a valid 4-digit postcode.");
+        return false;
+      }
+
+      const ranges = postcodeRanges[state];
+      const isValid = ranges?.some(([min, max]) => postcode >= min && postcode <= max);
+
+      if (!isValid) {
+        alert(`The postcode ${postcode} is not valid for ${state}.`);
+        return false;
+      }
+
+      return true; // allow form submission
+    }
+  </script>
 </body>
-
+</html>

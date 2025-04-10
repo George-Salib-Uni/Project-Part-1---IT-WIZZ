@@ -1,43 +1,45 @@
-
+/*coloring and styling the h1*/
 h1 {background-color: darkcyan;
     color: white;
     text-align: center;
+    padding: 15px;
 }
-
+/*coloring and styling the h2*/
 h2{background-color: cadetblue;
 color: white;
+padding: 15px;
 }
 
-
+/*coloring and styling of body*/
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: white;
     color: black;
-    width: 50%;
-    margin: auto; 
+    padding: 10px;
+    display:grid;
+    justify-content: space-around;/*layout of the body border*/
 }
-
-
-
 
 
 #sbutton{
     background-color: darkseagreen;
-    border: 4px solid #ccc;
-    padding: 1em;
-    text-decoration-color: antiquewhite;
+    border: 8px solid #ccc;
+    padding: 10px;
+    color: antiquewhite;
     
 }
 
-#button :hover{ background-color: cadetblue;
-                color: darkgreen;
-
-}
-
+/*making the reset the button red border*/
 #rbutton{
     background-color: rgb(171, 58, 58);
-    border: 4px solid #760c0c;
-    padding: 1em;
-    text-decoration-color: antiquewhite;
+    border: 8px solid #ccc;
+    padding: 10px;
+    color: antiquewhite;
     
+}
+
+/*using this code the fill boxes will become more space*/
+input {
+    margin: 5px;
+    padding: 10px;
 }
