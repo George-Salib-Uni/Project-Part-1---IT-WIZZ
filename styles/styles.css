@@ -43,3 +43,33 @@ input {
     padding: 10px;
 }
 
+<<<<<<< HEAD
+=======
+#button :hover{ background-color: cadetblue;
+                color: darkgreen;
+
+}
+
+h3 {
+    border: 1px solid black;
+    padding-left: 1em;
+}
+
+h5 {
+    font-family: Arial;
+}
+section{
+    border: 2px solid gray;
+    padding: 1em;
+    background-color: lightcyan;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border: 2px solid gray;
+    padding: 1em;
+    background-color: lightgray;
+}
+>>>>>>> 11650d1a99360fb08f8146360821ec178c6e698d
