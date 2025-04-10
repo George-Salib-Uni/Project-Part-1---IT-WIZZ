@@ -21,7 +21,7 @@ body{
 
 
 
-#button{
+#sbutton{
     background-color: darkseagreen;
     border: 4px solid #ccc;
     padding: 1em;
@@ -32,4 +32,12 @@ body{
 #button :hover{ background-color: cadetblue;
                 color: darkgreen;
 
+}
+
+#rbutton{
+    background-color: rgb(171, 58, 58);
+    border: 4px solid #760c0c;
+    padding: 1em;
+    text-decoration-color: antiquewhite;
+    
 }

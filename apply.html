@@ -25,9 +25,9 @@
     <fieldset>
         <legend>Personal Details</legend>
         <p><label for="Firstname">First name</label>
-        <input type="text" name="Firstname" id="Firstname" minlength="13" maxlength="20" required></p>
+        <input type="text" name="Firstname" id="Firstname" minlength="3" maxlength="20" required></p>
         <p><label for="Lastname">Last name</label>
-           <input type="text" name="Lastname" id="Lastname" minlength="13" maxlength="20" required></p>
+           <input type="text" name="Lastname" id="Lastname" minlength="3" maxlength="20" required></p>
             <p>
     
                 <label for="dob">Date of birth</label>
@@ -37,8 +37,8 @@
                     <p><label for="suburb">Suburb/town</label>
                         <input type="text" name="suburb" id="suburb" maxlength="40"></p>
                         <p> <label for="state"> State</label>
-                            <select name="state" id="state" vic checked="checked">
-                                <option value="VIC">VIC</option>
+                            <select name="state" id="state">
+                                <option value="VIC" selected>VIC</option> <!-- used chatgpt for this particular-->
                                 <option value="NSW">NSW</option>
                                 <option value="QLD">QLD</option>
                                 <option value="NT">NT</option>
@@ -50,23 +50,23 @@
                         </p><br>
                         
                         <p> <label for="Postcode">Postcode</label>
-                            <input type="number" name="Postcode" id="Postcode" pattern="0000-9999"></p>
+                            <input type="number" name="Postcode" id="Postcode"></p>
                             <p><label for="email">Email Address</label>
                                 <input type="email" name="email" id="email" required></p>
                                 <p> <label for="phonenumber"> Phone number</label>
-                                    <input type="number" name="phonenumber" id="phonenumber" required></p><br>
+                                    <input type="number" name="phonenumber" id="phonenumber" placeholder="eg-9496102189"></p><br>
                                 </fieldset>
 
                                 
                                     <h2>REQUIRED SKILLS</h2> 
-                                    <p><label for="NetworkingProtocols" required>Networking Protocols</label>
+                                    <p><label for="NetworkingProtocols">Networking Protocols</label>
                                     <input type="checkbox" name="NetworkingProtocols" id="NetworkingProtocols" checked="checked"></p>
                                     <p><label for="HardwareKnowledge">Hardware Knowledge</label>
                                         <input type="checkbox" name="HardwareKnowledge" id="HardwareKnowledge"></p>
                                         <p><label for="OperatingSystems">Operating Systems</label>
                                             <input type="checkbox" name="OperatingSystems" id="OperatingSystems"></p>
-                                            <p><label for="Network Configuration & Troubleshooting">Network Configuration & Troubleshooting</label>
-                                                <input type="checkbox" name="Network Configuration & Troubleshooting" id="Network"></p>
+                                            <p><label for="NetworkConfiguration&Troubleshooting">Network Configuration & Troubleshooting</label>
+                                                <input type="checkbox" name="NetworkConfiguration&Troubleshooting" id="NetworkConfiguration&Troubleshooting"></p>
                                                 <p><label for="CloudNetworking">Cloud Networking</label>
                                                     <input type="checkbox" name="CloudNetworking" id="CloudNetworking"></p>
                                                     <p><label for="SecurityFundamentals">Security Fundamentals</label>
@@ -77,8 +77,8 @@
                                 
                                     
 
-            <input id="button" type= "submit" value="APPLY">
-            <input id="button" type= "reset" value="RESET">
+            <input id="sbutton" type= "submit" value="APPLY">
+            <input id="rbutton" type= "reset" value="RESET">
     
 </form>
 
