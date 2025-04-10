@@ -1,45 +1,45 @@
-/*coloring and styling the h1*/
+/*forms coloring and styling the h1*/
 h1 {background-color: darkcyan;
     color: white;
-    text-align: center;
+    text-align: end;
     padding: 15px;
+    border: solid rgb(34, 56, 7);
 }
-/*coloring and styling the h2*/
+/*forms coloring and styling the h2*/
 h2{background-color: cadetblue;
 color: white;
-padding: 15px;
+padding: 18px;
+margin: 25px;
+border: solid rgb(6, 54, 6);
+}
+#jobreference {color: rgb(236, 7, 7);
+               font-style: oblique;
 }
 
-/*coloring and styling of body*/
+/*forms coloring and styling of body*/
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: white;
     color: black;
     padding: 10px;
     display:grid;
-    justify-content: space-around;/*layout of the body border*/
+    justify-content: center;/*layout of the body border*/
 }
 
-
-#sbutton{
-    background-color: darkseagreen;
-    border: 8px solid #ccc;
+/*forms making the apply/reset the button styling*/
+button{
+    background-color: darkcyan;
+    border: 5px double #cccccc;
     padding: 10px;
-    color: antiquewhite;
-    
+    color: antiquewhite;   
 }
+aside{margin: 20px;}
+/*forms using aside tags to bring hover effect*/
+aside :hover{background-color: rgb(43, 226, 226);}
 
-/*making the reset the button red border*/
-#rbutton{
-    background-color: rgb(171, 58, 58);
-    border: 8px solid #ccc;
-    padding: 10px;
-    color: antiquewhite;
-    
-}
-
-/*using this code the fill boxes will become more space*/
+/*forms using this code the fill boxes will become more space*/
 input {
-    margin: 5px;
+    margin: 10px;
     padding: 10px;
 }
+

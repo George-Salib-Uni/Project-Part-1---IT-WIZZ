@@ -10,16 +10,23 @@
   <title>JOB APPLICATION</title>
 </head>
 <body>
+  <nav>
+    <a href="index.html" title="Go to home page">Home Page</a>
+    <a href="jobs.html" title="Go to Position Descriptions page">Position Descriptions</a>
+    <a href="apply.html" title="Go to application page">Job Application</a>
+    <a href="about.html" title="Go to about page">About</a>
+    <a href="mailto:info@TechShield.com.au" title="Email Us">Email</a>
+    </nav>
   <h1>JOB APPLICATION</h1>
   <h2>FILL THE REQUIRED FIELDS FOR JOB APPLICATION</h2>
 
-  <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" onsubmit="return validatePostcode()">  <!--onsubmit was taken from chatgpt -->
+  <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post"> 
 
     <label for="jobreference">JOB REFERENCE</label>
-    <select name="number" id="jobreference">
-        <option value="select">select</option>
-        <option value="Network Administrator 101">Network Administrator-101</option>
-        <option value="Cybersecurity Specialist 102">Cybersecurity Specialist-102</option>
+    <select name="number" id="jobreference" required>
+      <option value="">select</option>
+      <option value="Network Administrator 101">Network Administrator-101</option>
+      <option value="Cybersecurity Specialist 102">Cybersecurity Specialist-102</option>
     </select>
 
     <fieldset>
@@ -32,15 +39,15 @@
         <input type="text" name="Lastname" id="Lastname" maxlength="20" required></p>
 
       <p><label for="dob">Date of birth</label>
-        <input type="date" name="dob" id="dob"></p>
+        <input type="date" name="dob" id="dob" required></p>
 
       <p><label for="streetaddress">Street Address</label><br>
-        <input type="text" name="streetaddress" id="streetaddress" maxlength="40"></p>
+        <input type="text" name="streetaddress" id="streetaddress" maxlength="40" required></p>
 
       <p><label for="suburb">Suburb/town</label>
-        <input type="text" name="suburb" id="suburb" maxlength="40"></p>
+        <input type="text" name="suburb" id="suburb" maxlength="40" required></p>
 
-      <p><label for="state">Select State/Territory:</label>
+      <p><label for="state">State:</label> <!--dropdown for state-->
         <select name="state" id="state" required>
           <option value="">--Select--</option>
           <option value="ACT">ACT</option>
@@ -55,66 +62,38 @@
       </p>
 
       <p><label for="Postcode">Postcode</label>
-        <input type="text" name="Postcode" id="Postcode" pattern="\d{4}" required>
+        <input type="text" name="Postcode" id="Postcode" pattern="\d{4}" required> <!--pattern generated using chatgpt-->
       </p>
 
       <p><label for="email">Email Address</label>
-        <input type="email" name="email" id="email" required></p>
+        <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></p> <!--pattern from uni provided cheatsheet-->
 
       <p><label for="phonenumber">Phone number</label>
-        <input type="tel" name="phonenumber" id="phonenumber" placeholder="eg-9496102189"></p>
-    </fieldset>
+        <input type="tel" name="phonenumber" id="phonenumber" pattern="[0-9]{8-12}" placeholder="eg-9496102189" required></p> <!--pattern from uni provided cheatsheet-->
+    </fieldset><br>
 
-    <h2>REQUIRED SKILLS</h2>
-    <p><label><input type="checkbox" name="NetworkingProtocols" checked> Networking Protocols</label></p>
-    <p><label><input type="checkbox" name="HardwareKnowledge"> Hardware Knowledge</label></p>
-    <p><label><input type="checkbox" name="OperatingSystems"> Operating Systems</label></p>
-    <p><label><input type="checkbox" name="NetworkConfiguration&Troubleshooting"> Network Configuration & Troubleshooting</label></p>
-    <p><label><input type="checkbox" name="CloudNetworking"> Cloud Networking</label></p>
-    <p><label><input type="checkbox" name="SecurityFundamentals"> Security Fundamentals</label></p>
+    <h2>REQUIRED SKILLS</h2> <!--input for skills-->
+<fieldset><legend>SKILLS</legend>
+  <p><label><input type="checkbox" name="NetworkingProtocols" checked> Networking Protocols</label></p>
+  <p><label><input type="checkbox" name="HardwareKnowledge"> Hardware Knowledge</label></p>
+  <p><label><input type="checkbox" name="OperatingSystems"> Operating Systems</label></p>
+  <p><label><input type="checkbox" name="NetworkConfiguration&Troubleshooting"> Network Configuration & Troubleshooting</label></p>
+  <p><label><input type="checkbox" name="CloudNetworking" checked> Cloud Networking</label></p>
+  <p><label><input type="checkbox" name="SecurityFundamentals"> Security Fundamentals</label></p>
 
-    <p><label for="description">Other Skills</label><br>
-      <textarea name="description" id="description" rows="4" cols="40" placeholder="Other Skills"></textarea>
-    </p>
+  <p><label for="description">Other Skills</label><br>
+    <textarea name="description" id="description" rows="4" cols="40" placeholder="Other Skills"></textarea>
+  </p></fieldset>
+    
+    
 
     <p>
-      <input id="sbutton" type="submit" value="APPLY">
-      <input id="rbutton" type="reset" value="RESET">
+      <aside><button  type="submit">Apply</button>
+        <button type="reset">Reset</button></aside>
+  
+      
     </p>
   </form>
- <!-- used chatgpt in the script down here -->
 
-  <script>
-    const postcodeRanges = {
-      ACT: [[200, 299], [2600, 2618], [2900, 2920]],
-      NSW: [[1000, 1999], [2000, 2599], [2619, 2899], [2921, 2999]],
-      NT: [[800, 899], [900, 999]],
-      QLD: [[4000, 4999], [9000, 9999]],
-      SA: [[5000, 5799], [5800, 5999]],
-      TAS: [[7000, 7799], [7800, 7999]],
-      VIC: [[3000, 3999], [8000, 8999]],
-      WA: [[6000, 6797], [6800, 6999]]
-    };
 
-    function validatePostcode() {
-      const state = document.getElementById("state").value;
-      const postcode = parseInt(document.getElementById("Postcode").value);
-
-      if (isNaN(postcode) || postcode < 0 || postcode > 9999) {
-        alert("Please enter a valid 4-digit postcode.");
-        return false;
-      }
-
-      const ranges = postcodeRanges[state];
-      const isValid = ranges?.some(([min, max]) => postcode >= min && postcode <= max);
-
-      if (!isValid) {
-        alert(`The postcode ${postcode} is not valid for ${state}.`);
-        return false;
-      }
-
-      return true; // allow form submission
-    }
-  </script>
-</body>
-</html>
+ 
