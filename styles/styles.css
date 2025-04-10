@@ -1,7 +1,7 @@
 /*forms coloring and styling the h1*/
 h1 {background-color: darkcyan;
     color: white;
-    text-align: end;
+    text-align: center;
     padding: 15px;
     border: solid rgb(34, 56, 7);
 }
