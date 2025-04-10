@@ -34,8 +34,8 @@ body{
 }
 
 h3 {
-    text-decoration: underline;
-
+    border: 1px solid black;
+    padding-left: 1em;
 }
 
 h5 {
@@ -44,6 +44,7 @@ h5 {
 section{
     border: 2px solid gray;
     padding: 1em;
+    background-color: lightcyan;
 }
 
 nav {
