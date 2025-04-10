@@ -51,8 +51,7 @@ input {
 }
 
 h3 {
-    border: 1px solid black;
-    padding-left: 1em;
+    text-decoration: underline;
 }
 
 h5 {
@@ -61,7 +60,6 @@ h5 {
 section{
     border: 2px solid gray;
     padding: 1em;
-    background-color: lightcyan;
 }
 
 nav {
