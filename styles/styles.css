@@ -24,6 +24,7 @@ body{
     padding-left: 10em;
     padding-right: 10em;
     text-align: center; /*layout of the body border*/
+    background-color: #f4fefe;
 }
 
 #left_align{
@@ -33,6 +34,7 @@ body{
     padding-left: 10em;
     padding-right: 10em;
     text-align: left; 
+    background-color: #f4fefe;
 }
 
 #index {
@@ -40,8 +42,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-  }
-
+}
 
 /*forms making the apply/reset the button styling*/
 button{
@@ -100,4 +101,11 @@ nav {
 
 a {
     text-decoration: none;
+}
+
+table {
+    table-layout: auto;
+    border: 2px solid gray;
+    padding: 1em;
+    background-color: whitesmoke;
 }
