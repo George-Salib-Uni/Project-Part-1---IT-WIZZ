@@ -109,3 +109,46 @@ table {
     padding: 1em;
     background-color: whitesmoke;
 }
+/*Code Below is George Salib's - 101613603*/
+/* Float the figure to the right */
+figure {
+    float: right;
+    margin: 0 0 1em 1em; /* spacing from content */
+  }
+  
+  /* Style the image with shorthand border */
+  figure img {
+    border: 3px solid #333; /* black border */
+    width: 200px; /* optional width */
+  }
+
+  /* Center the table */
+section table {
+    margin: 0 auto; /* horizontally centers the table */
+    border-collapse: collapse;
+    width: 80%; /* optional */
+  }
+  
+  /* Bold headings */
+  section table th {
+    font-weight: bold;
+    background-color: #dddddd; /* light gray background */
+    padding: 10px;
+  }
+  
+  /* Background color for cells with hover effect */
+  section table td {
+    background-color: #f0f8ff; 
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  section table td:hover {
+    background-color: #cce7ff; /* slightly darker on hover */
+  }
+
+/* Student ID aligned to the right */
+    .student-id {
+    text-align: right;
+    font-weight: bold;
+  }
