@@ -62,11 +62,11 @@
         </select>
       </p>
       <!--validaton of postcode without javascript--><!--pattern generated using chatgpt-->
-      <p><label for="Postcode">Postcode</label>
-        <input type="text" name="postcode" id="postcode" required 
-         pattern="^(0[2-9]|[1-9][0-9])\d{3}$" 
-         title="Please enter a valid Australian postcode (4 digits, starting with 0-9)."></p>
-      </p>
+      <p><input type="text" name="postcode" id="postcode"
+        pattern="^(0[2-9]|[1-9][0-9])\d{2}$"
+        title="Enter a valid 4-digit Australian postcode (0200 to 9999)"
+        required>
+        </p>
     
       </p>
 
