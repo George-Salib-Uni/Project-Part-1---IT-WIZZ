@@ -147,7 +147,7 @@ section table {
     background-color: #cce7ff; /* slightly darker on hover */
   }
 
-/* Student ID aligned to the right */
+/* Student ID aligned to the right - wasnt able to move dot points to right side with ids. */ 
     .student-id {
     text-align: right;
     font-weight: bold;
